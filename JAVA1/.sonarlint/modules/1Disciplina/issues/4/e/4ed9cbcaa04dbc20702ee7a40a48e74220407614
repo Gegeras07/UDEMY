@@ -1,0 +1,16 @@
+
+Œsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜­®ãùÿÿÿÿHRMINORZ
+CODE_SMELL
+}squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Žšñ78ƒ²­–Ö,H RMAJORZ
+CODE_SMELL
+p
+squid:S106"9Replace this use of System.out or System.err by a logger.(þõÈŸüÿÿÿÿ8¶â“–Ö,HRMAJORZ
+CODE_SMELL
+p
+squid:S106"9Replace this use of System.out or System.err by a logger.(´¾èžûÿÿÿÿ8¶â“–Ö,HRMAJORZ
+CODE_SMELL
+k
+squid:S106"9Replace this use of System.out or System.err by a logger.(ããÐÎ8¶â“–Ö,HRMAJORZ
+CODE_SMELL
+‰squid:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(þõÈŸüÿÿÿÿ8¶â“–Ö,HRMAJORZ
+CODE_SMELL
