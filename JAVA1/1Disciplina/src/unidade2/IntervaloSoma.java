@@ -1,0 +1,26 @@
+package unidade2;
+
+import java.util.Scanner;
+
+public class IntervaloSoma {
+
+	public static void main(String[] args) {
+		
+		int a = 0, b = 0, soma = 0;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Informe um número a: ");
+		a = input.nextInt();
+		System.out.print("Informe um número b: ");
+		b = input.nextInt();
+		
+		for(int i = a; i <= b; i++)
+			soma += i;
+		
+		System.out.printf("Soma dos números entre %d e %d é: %d", a, b, soma);
+		
+		input.close();
+		
+	}
+
+}

@@ -1,0 +1,38 @@
+package unidade2;
+
+import java.util.Random;
+
+public class MatrizEx {
+
+	public static void main(String[] args) {
+		
+		int[][] matriz = new int[4][4];
+		int[] contador = new int[10];
+		
+		Random random = new Random();
+		
+		for(int i = 0; i < 4; i++)
+			for(int j = 0; j < 4; j++)
+				matriz[i][j] = random.nextInt(10);
+		
+		for(int i = 0; i < 4; i++) {
+			for(int j = 0; j < 4; j++) {
+				System.out.printf("[ %d ]", matriz[i][j]);
+			}
+			
+			System.out.println();
+		}
+		
+		for(int i = 0; i < 4; i++)
+			for(int j = 0; j < 4; j++)
+				contador[matriz[i][j]]++;
+		
+		for(int i = 0; i < 10; i++) {
+			if(contador[i] > 0) {
+				System.out.printf("Elemento %d = %dx\n", i, contador[i]);
+			}
+		}
+
+	}
+
+}

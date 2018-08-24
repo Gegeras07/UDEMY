@@ -1,0 +1,30 @@
+package unidade2;
+
+import java.util.Scanner;
+
+public class Fatorial {
+
+	public static void main(String[] args) {
+		
+		int f = 0;
+		int count = 1;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Informe um valor: ");
+		f = input.nextInt();
+		
+		input.close();
+		
+		System.out.printf("%d! = ", f);		
+		
+		while(count < f) {
+			f *= count;
+			
+			count++;
+		}
+		
+		System.out.printf("%d", f);
+
+	}
+
+}
