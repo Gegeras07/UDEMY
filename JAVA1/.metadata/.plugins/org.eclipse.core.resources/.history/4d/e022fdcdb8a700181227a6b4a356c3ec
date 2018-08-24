@@ -1,0 +1,38 @@
+package unidade3.sisalucar;
+
+//import java.util.Scanner;
+
+public class SisalucarApp {
+
+	public static void main(String[] args) {		
+		
+		/*Scanner input = new Scanner(System.in);
+		String cor = new String();
+		String fabricante = new String();
+		int capacidadeTanque = 0;
+		double consumo = 0;
+		
+		Carro carro = new Carro();	
+		Cliente cliente = new Cliente();
+		
+		System.out.print("Informe a cor do carro: ");
+		cor = input.next();
+		System.out.print("Informe o fabricante do carro: ");
+		fabricante = input.next();
+		System.out.print("Informe a capacidade do tanque (l): ");
+		capacidadeTanque = input.nextInt();
+		System.out.print("Informe o consumo (Km/l): ");
+		consumo = input.nextDouble();
+		
+		carro.setCor(cor);
+		carro.setFabricante(fabricante);
+		carro.setConsumo(consumo);
+		carro.setCapacidadeTanque(capacidadeTanque);
+		
+		System.out.printf("Cor do carro: %s%nFabricante do carro: %s%nCapacidade do Tanque (l): %d%nConsumo (Km/l): %.2f%nAutonomia: %.2f%n", carro.getCor(), carro.getFabricante(), carro.getCapacidadeTanque(), carro.getConsumo(), carro.autonomia());
+		
+		input.close();*/
+
+	}
+
+}

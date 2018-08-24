@@ -1,0 +1,14 @@
+package unidade3.sisalucar;
+
+import java.time.LocalDate;
+
+public class Locacao {
+	
+	private long idLocacao;
+	private long idCliente;
+	private long idCarro;
+	private float valorLocado;
+	private LocalDate datainicial;
+	private LocalDate datafinal;
+
+}

@@ -1,0 +1,10 @@
+package unidade3.sisalucar;
+
+public class Cliente {
+	
+	private long idCliente;
+	private String cpf;
+	private String nome;
+	private String cnh;
+
+}

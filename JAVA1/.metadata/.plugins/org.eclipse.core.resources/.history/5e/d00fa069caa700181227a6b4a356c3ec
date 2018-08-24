@@ -1,0 +1,28 @@
+package unidade3.sisalucar;
+
+public class SisalucarApp {
+
+	public static void main(String[] args) {	
+		
+		Carro carro = new Carro();
+		Carro carro2 = new Carro();
+		
+		carro.setIdCarro(1);
+		carro.setModelo("gol");
+		carro.setPlaca("jdk-0001");
+		carro.setCor("azul");
+		carro.setAno(2013);
+		carro.setValorDiaria(99.90f);
+		carro.setFabricante("Volkswagen");
+		
+		Cliente cliente = new Cliente();
+		Cliente cliente2 = new Cliente();
+		
+		cliente.setIdCliente(1);
+		cliente.setCpf("123456789-90");
+		cliente.setNome("Joao Pedro");
+		cliente.setCnh("XYZ0001");
+
+	}
+
+}

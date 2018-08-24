@@ -1,0 +1,82 @@
+package sisalucar;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+//Definitivamente NÃO é o exemplo do curso XD
+
+public class SisalucarApp {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Locacao> locacoes = new ArrayList<Locacao>();
+		int idLocacao = 0;
+		
+		Carro carro = new Carro();
+		Carro carro2 = new Carro();
+		
+		carro.setIdCarro(1);
+		carro.setModelo("gol");
+		carro.setPlaca("jdk-0001");
+		carro.setCor("azul");
+		carro.setAno(2013);
+		carro.setValorDiaria(99.90f);
+		carro.setFabricante("Volkswagen");
+		
+		carro2.setIdCarro(2);
+		carro2.setModelo("onix");
+		carro2.setPlaca("jdk-0002");
+		carro2.setCor("prata");
+		carro2.setAno(2014);
+		carro2.setValorDiaria(130.90f);
+		carro2.setFabricante("Chevrolet");
+		
+		Cliente cliente = new Cliente();
+		Cliente cliente2 = new Cliente();
+		
+		cliente.setIdCliente(1);
+		cliente.setCpf("123456789-90");
+		cliente.setNome("Joao Pedro");
+		cliente.setCnh("XYZ0001");
+		
+		cliente2.setIdCliente(2);
+		cliente2.setCpf("987654321-21");
+		cliente2.setNome("Huehue Brbr");
+		cliente2.setCnh("XYZ0002");
+		
+		idLocacao++;
+		locacoes.add(realizarLocacao(idLocacao, carro.getIdCarro(), cliente.getIdCliente(), carro.getValorDiaria()));
+		idLocacao++;
+		locacoes.add(realizarLocacao(idLocacao, carro2.getIdCarro(), cliente2.getIdCliente(), carro2.getValorDiaria()));
+		
+		gerarRelatorioLocacao(locacoes);
+
+	}
+	
+	public static Locacao realizarLocacao(int idLocacao, long idCarro, long idCliente, float valorDiaria) {
+		Locacao locacao = new Locacao();
+		
+		locacao.setIdCliente(idCliente);
+		locacao.setIdCarro(idCarro);
+		locacao.setIdLocacao(idLocacao);
+		locacao.setDatainicial(LocalDate.now());
+		locacao.setDatafinal(LocalDate.now().plusDays(2));
+		locacao.setValorLocado(2 * valorDiaria);
+		
+		System.out.println(locacao.toString());
+		
+		return locacao;
+	}
+	
+	public static void gerarRelatorioLocacao(ArrayList<Locacao> locacoes) {
+		
+		float totalFaturado = 0.0f;
+		
+		for(Locacao locacao: locacoes)
+			totalFaturado += locacao.getValorLocado();
+		
+		System.out.printf("Total Faturamento = $%.2f", totalFaturado);
+		
+	}
+
+}

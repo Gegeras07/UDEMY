@@ -1,0 +1,30 @@
+package unidade3.sisalucar;
+
+import java.util.Scanner;
+
+public class SisalucarApp {
+
+	public static void main(String[] args) {		
+		
+		Scanner input = new Scanner(System.in);
+		String cor = new String();
+		String fabricante = new String();
+		
+		Carro carro = new Carro();	
+		Cliente cliente = new Cliente();
+		
+		System.out.print("Informe a cor do carro: ");
+		cor = input.next();
+		System.out.print("Informe o fabricante do carro: ");
+		fabricante = input.next();
+		
+		carro.setCor(cor);
+		carro.setFabricante(fabricante);
+		
+		System.out.printf("Cor do carro: %s\nFabricante do carro: %s\n", carro.getCor(), carro.getFabricante());
+		
+		input.close();
+
+	}
+
+}
