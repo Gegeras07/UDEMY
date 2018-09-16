@@ -2,14 +2,14 @@ package unidade1;
 
 public class Teste {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ArrayIndexOutOfBoundsException {
 		
 		int i = 0;
 		String[] frases = {"um", "dois", "tres"};
 		
 		while(i < 4) {
 			
-			try {
+			/*try {
 				//Unchecked exception
 				System.out.println(frases[i]);				
 			}
@@ -17,6 +17,10 @@ public class Teste {
 				System.out.println("Erro no acesso ao vetor: " + e.getMessage());
 			}
 			
+			i++;*/
+			
+			//Exceção tratada usando 'throws'
+			System.out.println(frases[i]);
 			i++;
 		}
 		
