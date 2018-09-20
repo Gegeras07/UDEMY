@@ -37,7 +37,7 @@ import java.net.*;
 import mygame.client.Client;
 import mygame.shared.Utilities;
 
-public class Server {
+public class Server implements IComunicacaoServer {
 
 	public static void main(String args[]) {
 		ServerSocket serverSocket = null;
@@ -62,5 +62,29 @@ public class Server {
 				System.exit(1);
 			}
 		}
+	}
+
+	@Override
+	public boolean aceitarConexao() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean prepararEnvioDados() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean enviarDados() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean fecharConexao() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

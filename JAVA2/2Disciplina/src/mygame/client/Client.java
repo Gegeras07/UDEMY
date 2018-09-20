@@ -37,7 +37,7 @@ import java.util.*;
 
 import mygame.shared.Utilities;
 
-public class Client extends Thread {
+public class Client extends Thread implements IComunicacaoClient {
 	Socket clientSocket = null;
 
 	public Client(Socket s) {
@@ -99,5 +99,29 @@ public class Client extends Thread {
 			e.printStackTrace();
 		}
 
+	}
+
+	@Override
+	public boolean solicitarConexao() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean receberDados() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean gravarDados() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean fecharConexao() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }
