@@ -1,0 +1,9 @@
+
+^squid:S3010"*Remove this assignment of "totalDeContas".(ä¯“‡8·ƒ—é×,H„RMAJORZ
+CODE_SMELL
+Wsquid:S3010"*Remove this assignment of "totalDeContas".(ä¯“‡H…RMAJORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷Ì¬ƒûÿÿÿÿHƒRMINORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶ø•‚ıÿÿÿÿ8À€•ºØ,H“RMAJORZ
+CODE_SMELL

@@ -1,0 +1,15 @@
+package unidade4;
+
+public class TestaPolimorfismo {
+
+	public static void main(String[] args) {
+		
+		Funcionario jose = new Funcionario();
+		
+		Funcionario antonio = new Professor();
+		
+		Funcionario andrea = new Administrativo();
+
+	}
+
+}

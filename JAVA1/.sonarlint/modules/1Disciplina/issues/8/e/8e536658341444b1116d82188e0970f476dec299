@@ -1,16 +1,16 @@
 
-Ssquid:S1659	"Declare "b" on a separate line.(•œ¥à8î±àÃÖ,H•RMINORZ
+Vsquid:S1659	""Declare "soma" on a separate line.(•œ¥à8î±àÃÖ,HºRMINORZ
 CODE_SMELL
-squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜­®ãùÿÿÿÿH’RMINORZ
-CODE_SMELL
-q
-squid:S106"9Replace this use of System.out or System.err by a logger.(ø€óúÿÿÿÿ8î±àÃÖ,H—RMAJORZ
-CODE_SMELL
-Vsquid:S1659	""Declare "soma" on a separate line.(•œ¥à8î±àÃÖ,H–RMINORZ
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜­®ãùÿÿÿÿH»RMINORZ
 CODE_SMELL
 l
-squid:S106"9Replace this use of System.out or System.err by a logger.(»Íù8ªÁäÃÖ,HšRMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(»Íù8ªÁäÃÖ,H¼RMAJORZ
 CODE_SMELL
 k
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ÿ×ÄU8ªÁäÃÖ,H›RMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ÿ×ÄU8ªÁäÃÖ,H½RMAJORZ
+CODE_SMELL
+Ssquid:S1659	"Declare "b" on a separate line.(•œ¥à8î±àÃÖ,H¾RMINORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(ø€óúÿÿÿÿ8î±àÃÖ,H¿RMAJORZ
 CODE_SMELL

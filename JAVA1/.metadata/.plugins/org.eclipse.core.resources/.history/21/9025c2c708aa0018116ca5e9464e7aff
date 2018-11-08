@@ -1,0 +1,13 @@
+package unidade3;
+
+public class EnumTest {
+	
+	private static final double PI = 3.14159; //Valor Constante
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

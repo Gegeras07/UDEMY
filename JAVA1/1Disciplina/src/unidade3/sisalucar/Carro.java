@@ -1,6 +1,6 @@
 package unidade3.sisalucar;
 
-public class Carro {
+public class Carro extends Veiculo /*Herança*/ {
 
 	private long idCarro;
 	private String placa;
@@ -9,12 +9,13 @@ public class Carro {
 	private int ano;
 	private String cor;
 	private float valorDiaria;
+	private Revendedor revendedor;
 	
 	public Carro() {
 		
 	}
 	
-	public Carro(long idCarro, String placa, String fabricante, String modelo, int ano, String cor, float valorDiaria) {		
+	public Carro(long idCarro, String placa, String fabricante, String modelo, int ano, String cor, float valorDiaria, Revendedor revendedor) {		
 		setIdCarro(idCarro);
 		setPlaca(placa);
 		setFabricante(fabricante);
@@ -22,13 +23,16 @@ public class Carro {
 		setAno(ano);
 		setCor(cor);
 		setValorDiaria(valorDiaria);
+		setRevendedor(revendedor);
 	}
 	
 	@Override
 	public String toString() {
 		return "Carro [idCarro=" + idCarro + ", placa=" + placa + ", fabricante=" + fabricante + ", modelo=" + modelo
-				+ ", ano=" + ano + ", cor=" + cor + ", valorDiaria=" + valorDiaria + "]";
+				+ ", ano=" + ano + ", cor=" + cor + ", valorDiaria=" + valorDiaria + ", revendedor=" + revendedor + "]";
 	}
+	
+	//Extensão - Uma classe filha pode possuir seus próprios métodos
 
 	public long getIdCarro() {
 		return idCarro;
@@ -71,6 +75,14 @@ public class Carro {
 	}
 	public void setValorDiaria(float valorDiaria) {
 		this.valorDiaria = valorDiaria;
+	}
+
+	public Revendedor getRevendedor() {
+		return revendedor;
+	}
+
+	public void setRevendedor(Revendedor revendedor) {
+		this.revendedor = revendedor;
 	}
 	
 }

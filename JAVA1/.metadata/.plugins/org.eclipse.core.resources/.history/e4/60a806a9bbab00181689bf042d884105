@@ -1,0 +1,17 @@
+package unidade3.sisalucar;
+
+public class Onibus extends Veiculo {
+	
+	public int getPassageiros() {
+		
+		return 40;
+		
+	} //Anulação
+	
+	public void acelera(int limiteVelocidade) {
+		
+		System.out.println("Motorista, pode correr! A gurizada não tem medo de morrer! Limite: " + limiteVelocidade);
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package unidade3;
+
+public enum Medida {
+	
+	MM("Milímetro"), CM("Centímetro"), M("Metro");
+	
+	private String titulo;
+	
+	private Medida(String titulo) {
+		this.titulo = titulo;
+	}
+	
+	public String getTitulo(){
+		return titulo;
+	}
+
+}

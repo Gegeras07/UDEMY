@@ -1,0 +1,26 @@
+package unidade4;
+
+public class TestaPolimorfismo {
+
+	public static void main(String[] args) {
+		
+		Funcionario jose = new Funcionario();
+		
+		Funcionario antonio = new Professor();
+		
+		Funcionario andrea = new Administrativo();
+
+	}
+	
+	public void verificarTipoFuncionario(Funcionario objeto) {
+		
+		if(objeto instanceof Diretor)
+			System.out.println("Diretor");
+		else if(objeto instanceof Professor)
+			System.out.println("Professor");
+		else
+			System.out.println("Administrativo");
+		
+	}
+
+}
